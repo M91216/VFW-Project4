@@ -137,7 +137,7 @@ window.addEventListener("DOMContentLoaded", function(){
    function getImage(cName, makeSubList){
        var imageLi = document.createElement("li");
        makeSubList.appendChild(imageLi);
-       var newImage = document.createElement("image");
+       var newImage = document.createElement("img");
        var setSrc = newImage.setAttribute("src", "images/"+ cName + ".png");
        imageLi.appendChild(newImage);
    }
@@ -167,13 +167,13 @@ window.addEventListener("DOMContentLoaded", function(){
        
        
        var deleteLink = document.createElement("a");
-       deleteLink.href = "#";/Users/michaelbain/Desktop/VFW-Project4/Bain_M.html
+       deleteLink.href = "#";///Users/michaelbain/Desktop/VFW-Project4/Bain_M.html
        deleteLink.key = key;
        var deleteText = "Delete Contact";
        deleteLink.addEventListener("click", deleteItem);
        deleteLink.innerHTML = deleteText;
        linksLi.appendChild(deleteLink);  
-   }
+    }
 
 
     function editItem(){
@@ -201,17 +201,16 @@ window.addEventListener("DOMContentLoaded", function(){
            }else if(checkbox[i].value == "No" && item.yesno[1] == "No"){
                checkbox[i].setAttribute("checked","checked");
            }
-	    
 	    }
 	    var radio = document.form[0].studioroom;
-	    for(var i=0; i<radio.length; i++){   
+	    for(var k=0; k<radio.length; k++){   
             if(radio[i].value == "studioA" && item.studioroom[1] == "studioA"){
             radio[i].setAttribute("checked","checked");
-        }else if(radio[i].value == "studioB" && item.studioroom[1] == "studioA"){
+        }else if(radio[i].value == "studioB" && item.studioroom[1] == "studioB"){
             radio[i].setAttribute("checked","checked");
-        }else if(radio[i].value == "studioC" && item.studioroom[1] == "studioA"){
+        }else if(radio[i].value == "studioC" && item.studioroom[1] == "studioC"){
             radio[i].setAttribute("checked","checked");
-           }
+         }
         }
              
         //Remove the initial listener from the input "save contact" button.
@@ -224,7 +223,7 @@ window.addEventListener("DOMContentLoaded", function(){
         editSubmit.addEventListener("click", validate);
         editSubmit.key = this.key; 
          
-                   	        	   	        
+                	        	   	        
         }
     
     function deleteItem(){
