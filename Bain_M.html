@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--HTML TAG-->
+<! Michael Bain
+   Visual Frameworks
+   1302
+   2/15/13
+ <!  project 2>
+
+<html>
+    
+    <head>
+    
+        <meta charset="utf-8" />
+        <meta name="description" content="My very first HTML5 document" />
+        <meta name="keywords" content="html5, mobile development, Full Sail University" />
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="320" />
+        <title>Studio Time</title>
+    
+    <link href="Bain_M.css" rel="stylesheet" type="text/css" />
+    
+   
+    </head>
+    <body>
+        <h1>New Session</h1>
+        <a href="#" id="clearLink">Clear Stored Data</a>
+        <a href="#" id= "displayLink">Display Data</a>
+        <a href="Bain_M.html" id="addNew">Add New Session</a>
+        
+        <form
+              action="#" method="get" id="sessionForm" />
+            <fieldset>
+                <legend>Information</legend>
+                <ul id="errors"></ul>
+                <ul>
+                    
+                    <li><label for="uname">Customer:</label><br><input type="text" id="customer" /></li>
+                    <li><label for="pword">Artist/Band:</label><br><input type="text" id="artist/band" /></li>
+                    <li><label for="email">Email:</label><br><input type="email" id="email" placeholder="example@email.com" /></li>
+                    <li><label for="url">Phone Number:</label><br><input type="phone" id="phone" placeholder="646-354-4098" /></li>
+                    <li><label for="url">Session Date:</label><br><input type="date" id="date" placeholder="02/18/2013" /></li>
+                    <li><label for="url">Session Time:</label><br><input type="time" id="time" placeholder="8:00pm" /></li>
+                    <li><label for="url">Session End:</label><br><input type="time" id="endtime" placeholder="3:00am" /></li>
+                    <li><label for="hours">Block Hours</label><br><input type="range" min="3" max="24" id= "hours" /></li>                                                             
+              
+                    
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Session Info</legend>
+         
+                               
+                    <li>In-House Engineer?:</li>
+                        <ul>
+                            <li><input type="checkbox" value="Yes" id="yes" name="yesno" /><label for="yes">Yes</label></li>
+                            <li><input type="checkbox" value="No" id="no" name= "yesno" /><label for="no">No</label></li>
+                              
+                        </ul>
+                    </li>
+                    <li>Studio Room:
+                        <ul>
+                            <li><input type="radio" value="studioA" id="studioa" name="studioroom" /><label for="studioa">Studio A</label></li>
+                            <li><input type="radio" value="studioB" id="studiob" name="studioroom" /><label for="studiob">Studio B</label></li>
+                            <li><input type="radio" value="studioC" id="studioc" name="studioroom" /><label for="studioc">Studio C</label></li>
+                            
+                        </ul>                        
+                    </li>
+                    <li>
+                        <li id= "select"><label for="group">*Recording Format:</label><br />
+                            
+                            <optgroup label="Analog">
+                                <option value="twoInchTape" id= "twoinchtape">2in.Tape/24</option>
+        
+                           
+                           
+                            <optgroup label="Digital">
+                                <option value="proTools" id= "protools">Pro ToolsHD</option>
+                                <option value="logic" id= "logic">Logic</option>
+                                <option value="nuendoCubase" id= "nuendo/cubase">Nuendo/Cubase</option>
+                                <option value="flStudio" id= "flstudio">FL Studio</option>
+                            </optgroup>                           
+                        </select>
+                    </li>
+                    <li><label for="comments">Special Instructions For Session:</label><textarea id="comments"></textarea></li>
+                    <li><input type="hidden" value="true" /></li>                       
+                </ul>
+            <fieldset>
+        
+            <input type="submit" value="Save Booking" id="submitBooking"/><br />          
+                 
+        </form> 
+        <script src="json.js" type="text/javascript"></script>         
+        <script src="Bain_M.js" type="text/javascript"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
